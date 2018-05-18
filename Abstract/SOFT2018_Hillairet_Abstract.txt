@@ -1,0 +1,13 @@
+Ion Cyclotron Frequency Range Cold Magnetized Plasma Modelling in ANSYS HFSS
+
+Julien Hillairet (1), Frédéric Bocquet (2), Laurent Colas (1), Walid Helou (1), Riccardo Ragona (3,4)
+
+1.	IRFM CEA Cadarache 13108 Saint Paul lez Durance France 
+2.	ANSYS France
+3.	Laboratory for Plasma Physics, Royal Military Academy, (LPP-ERM/KMS), BE-1000, Brussels, Belgium 
+4.	Ghent University, Department of Applied Physics, 9000 Ghent, Belgium
+
+Achieving the plasma temperature expected for nuclear fusion requires external heating systems, such as dedicated Radio-Frequency antennas. Dimensions, power level and manufacturing cost which are at stake make it impossible to build scale-one mock-up during design and prototyping phases. For that reason, modelling the electromagnetic interactions between magnetized plasmas and Radio-Frequency antennas is mandatory for nuclear fusion research. 
+The modelling of the interactions between cold magnetized plasmas and Ion Cyclotron Resonance Heating (ICRH) antennas is generally assessed using specific codes. Antenna coupling codes often approximate the plasma to surface impedances described by 1D half infinite models.  Depending of the mathematical approaches used by these codes, the modelled antennas can be described either in simplified 2D dimensions or in 3D complex geometries converted from CAD models. Such approaches do not allow one to work directly on realistic antenna model and to assess rapidly performance changes. Moreover, during the design phase, it is convenient to use the simulation to directly estimate the thermal and mechanical loads in the same software suite. 
+
+Thanks to the collaboration between the fusion community and ANSYS, the RF modelling software ANSYS HFSS supports non-homogeneous gyrotropic medium, which are used to describe magnetized cold plasma away from resonances. In this paper, ANSYS HFSS is used to model ICRH antennas coupling to cold magnetized plasma. A simplified antenna model is compared with the specific coupling code ANTITER for various plasma density profiles. It is found that the coupling performances can generally be reproduced in HFSS. Its finite-element implementation imposes inherent restrictions on the definition and boundaries of the plasma domain due to the gyrotropic media in which two propagation modes can co-exist. These restrictions are discussed and technical recipes are given to conduct satisfying antenna coupling calculations with ANSYS HFSS, which allow faster design phases and experimental comparisons. 
