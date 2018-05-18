@@ -6,7 +6,7 @@
 ## Single Strap Antenna
 
 - w_strap = 120 mm : width (toroidal) of the strap
-- h_strap = 500 mm : height (poloidal) of the strap
+- h_strap = 200 mm : height (poloidal) of the strap
 - d_strap = 40 mm : depth of the strap (radial) with respect to front face (x=0)
 - e_strap = 15 mm ; strap thickness
 
@@ -27,3 +27,12 @@
 2) ne0 = 5e18 m^-3
 3) ne0 = 10e18 m^-3
 
+# HFSS-specific parameters
+`
+x_plasma	10	mm	10mm	Design
+w_vacuum	550	mm	550mm	Design
+h_vacuum	800	mm	800mm	Design
+d_vacuum	400	mm	400mm	Design
+d_plasma	350	mm	350mm	Design
+h_plasma	650	mm	650mm	Design
+w_plasma	500	mm	500mm	Design
