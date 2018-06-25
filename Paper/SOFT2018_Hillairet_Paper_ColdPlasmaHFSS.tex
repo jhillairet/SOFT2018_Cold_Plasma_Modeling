@@ -1,0 +1,94 @@
+\documentclass[review]{elsarticle}
+
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+
+\journal{Journal of \LaTeX\ Templates}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Elsevier bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Numbered
+%\bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+%\bibliographystyle{model1a-num-names}
+
+%% Harvard
+%\bibliographystyle{model2-names.bst}\biboptions{authoryear}
+
+%% Vancouver numbered
+%\usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+%\usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+%\bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+%\usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style
+\bibliographystyle{elsarticle-num}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Ion Cyclotron Frequency Range Cold Magnetized Plasma Modelling in {ANSYS} {HFSS}}
+%% Group authors per affiliation:
+\author[IRFM]{J.Hillairet\corref{mycorrespondingauthor}}
+\author[ERM]{R.Ragona}
+
+\cortext[mycorrespondingauthor]{Corresponding author}
+\ead{julien.hillairet@cea.fr}
+
+\address[IRFM]{CEA, IRFM, F-13108 Saint Paul-lez-Durance, France}
+\address[ERM]{Laboratory for Plasma Physics, Royal Military Academy, (LPP-ERM/KMS), BE-1000, Brussels, Belgium}
+
+
+\begin{abstract}
+Abstract here
+\end{abstract}
+
+\begin{keyword}
+ICRH \sep Cold Plasma \sep Finite Elements
+%\MSC[2010] 00-01\sep  99-00
+\end{keyword}
+
+\end{frontmatter}
+
+\linenumbers
+
+\section{Introduction}
+
+
+Explicit the needs and objectives or the work
+Be clear on what we not intend to do : hot plasma, core/edge physics, sheaths physics
+
+Modeling the plasma as a dielectric: recipe ? Can an increasing permittivity dielectric could compare  coupling on an increasing density edge plasma? 
+
+Gyrotropic plasma : sigma trick to deal with boundaries.
+Loss : recipe to define the sigma increase ? Does it depends of the power ?
+45$\deg$ plasma with Master/Slave BC. 
+
+
+
+How do these results extrapolate to largest structure ? Impact of n// vs sigma and size of plasma volume? 
+
+MFEM FE plasma \cite{Shiraiwa2017}
+Salted water as dielectric \cite{Ravera2012, Bottollier-Curtet2011}
+Dielectric as plasma \cite{Messiaen2011}
+PML \cite{Becache2016}
+
+\section*{References}
+
+\bibliography{SOFT2018}
+
+\end{document}
