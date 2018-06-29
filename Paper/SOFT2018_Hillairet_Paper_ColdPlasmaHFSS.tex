@@ -47,11 +47,10 @@ Achieving the plasma temperature expected for nuclear fusion requires external h
 
 During the last two decades, the availability of RF full wave software eased the design of Ion Cyclotron ({ICRF}) and Lower Hybrid Resonance Frequency systems ({LHRF}). As the both software and hardware progressed, the modelling of always more realistic and bigger components became possible, reducing the gap between CAD and RF models and accelerating the necessary feedback between mechanical and RF engineers. Nowadays, thermal or mechanical loads can be provided directly from the results of RF simulations inside integrated workflows. However, antenna to plasma coupling modelling with such tools was not possible unless severe simplifications. Indeed, full wave codes didn't support since recently anisotropic and non homogeneous dielectric media and this is the reason why community codes such as {ANTITER II} \cite{Messiaen2011} or {TOPICA} \cite{Lancellotti2006} for {ICRF} and {TOPLHA} \cite{Milanesio2012}, {OLGA} \cite{Preinhaelter2017} or {ALOHA} \cite{Hillairet2010a} for LHRF, were developed specifically for that purpose. While these tools are generally faster than full-wave modelling, they mostly assume slab plasma and simplified antenna geometries. % dealing to deal with plasma poloidal and toroidal curvatures.  
 
-
-Regarding to coupling performances only, using constant dielectric for the antenna loading is a good workaround to approximate the ICRF plasma coupling \cite{Messiaen2011a}. 
 %(but not LH, why?). 
-% test on water load : \cite{Messiaen2005}+Helou
-As a recent illustration, antenna coupling performances have been investigated substituting the plasma load  with a salty water tank with ANSYS HFSS \cite{Ravera2012} or with BaTiO3 with Microwave CST \cite{Bottollier-Curtet2011}. % OTHER REF ?
+Regarding to coupling performances only, using constant dielectric for the fast-wave antenna loading is a good workaround to approximate the ICRF plasma coupling \cite{Messiaen2011a}. Such loads, using (salty) water\cite{Messiaen2005} or BaTiO3 solutions\cite{Helou2018}] are used in laboratory experiments. 
+
+As a recent illustration, antenna coupling performances have been investigated substituting the plasma load  with a salty water tank with ANSYS HFSS \cite{Ravera2012, Qin2015} or with BaTiO3 with Microwave CST \cite{Bottollier-Curtet2011}. 
 
 
 
